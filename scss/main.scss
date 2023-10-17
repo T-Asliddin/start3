@@ -1,6 +1,7 @@
-@import "./font";
-@import "./variablas";
-@import "./mixn";
-@import "./global";
+@import "fonts";
+@import "variablas";
+@import "mixin";
+@import "global";
 
-@import "./block/block.scss"
+
+@import "block/block"
