@@ -1,0 +1,137 @@
+.safe{
+    background-color:  #3D4A39;
+    height: 788px;
+}
+
+
+.safe__title{
+    @include title;
+    color: #fff;
+    padding-top: 100px;
+    margin-bottom: 70px;
+}
+
+.safe__text{
+    color: #FFF;
+font-size: 24px;
+font-weight: 500;
+line-height: 130%; 
+opacity: 0.5;
+
+}
+
+.safe__list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 150px;
+    padding-bottom: 100px;
+}
+
+.safe__item{
+margin-right: auto;
+margin-left: auto;
+align-items: center;
+
+    &::before{
+        content: "";
+        width: 96px;
+        height: 96px;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-image: url(../img/room-wardrobe\ 1.svg);
+    
+    }
+}
+
+.safe__list :nth-child(2)::before
+    {
+        content: "";
+        width: 66px;
+        height: 66px;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-image: url(../../img/furniture\ \(1\)\ 1.svg);
+       
+    }
+
+    .safe__list :nth-child(3)::before
+    {
+        content: "";
+        width: 91px;
+        height: 93px;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-image: url(../../img/burner-oven\ 1.svg);
+       
+    }
+
+    .safe__list :nth-child(4)::before
+    {
+        content: "";
+        width: 66px;
+        height: 66px;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-image: url(../../img/door\ 1.svg);
+       
+    }
+
+    .safe__list :nth-child(5){
+        max-width: 278px;
+
+        &::before
+        {
+            content: "";
+            width: 90px;
+            height: 90px;
+            display: inline-block;
+            background-repeat: no-repeat;
+            background-image: url(../../img/floor\ 1.svg);
+           
+        }
+    }
+
+    .safe__list :nth-child(6)::before
+    {
+        content: "";
+        width: 84px;
+        height: 96px;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-image: url(../../img/brainstorm\ 1.svg);
+       
+    }
+
+
+
+
+    @media screen  and (max-width: 700px)  {
+        .safe__title{
+            font-size: 36px;
+        }
+        .safe__text{
+            font-size: 18px;
+        }
+    }
+
+    
+    @media screen  and (max-width: 550px)  {
+        .safe__list{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);  
+    }
+    .safe{
+        height: 970px;
+    }
+}
+
+    @media screen  and (max-width: 410px)  {
+        .safe__title{
+            font-size: 24px;
+        }
+
+        .safe{
+            height: 1050px;
+        }
+        
+    }
