@@ -1,0 +1,123 @@
+.about_container{
+    position: relative;
+    margin-bottom: 140px;
+    &::before{
+        content: "";
+        display: inline-block;
+        width: 160px;
+        height: 200px;
+        background-repeat: no-repeat;
+        background-image: url(../img/Rectangle10.jpg);
+        position:absolute;
+        left: -57px;
+        top: -40px;
+    }
+
+    &::after{
+        content: "";
+        display: inline-block;
+        width: 160px;
+        height: 200px;
+        background-repeat: no-repeat;
+        background-image: url(../img/Rectangle10.jpg);
+        position: absolute;
+        right: -57px;
+        bottom: 96px;
+    }
+}
+
+.about_title{
+    max-width: 814px;
+    color: #282B22;
+font-size: 36px;
+font-weight: 600;
+line-height: 130%; 
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 80px;
+}
+
+.about_text{
+    color: var #282B22;
+font-size: 18px;
+font-weight: 500;
+line-height: 150%;
+opacity: 0.8;
+position: relative;
+
+&::before{
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+    background-image: url(../../img/Крапка.svg);
+    position: absolute;
+    left: -30px;
+    top: 39px;
+}
+}
+
+.about_content{
+    border-bottom: 1px solid #282b22;
+
+}
+
+.about_box{
+    max-width: 926px;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    border-top: 1px solid #282b22;
+
+}
+
+.about_box :first-child{
+    border-right: 1px solid #282b22;
+    padding: 35px 60px 35px 0;
+    margin-left: 33px;
+}
+
+.about_box :last-child{
+    padding: 35px 0 35px 0;
+    margin-left: 90px;
+}
+
+
+@media screen and (max-width:1250px) {
+    .about_container{
+        &::before{
+            display: none;
+        }
+    
+        &::after{
+            display: none;
+        }
+    }
+}
+
+@media screen  and (max-width:640px) {
+    .about_title{
+        max-width: 299px;
+        font-size: 20px;
+    }
+
+
+    .about_box{
+        flex-direction: column;
+        :first-child{
+            max-width: 371px;
+            border-right:none;
+            border-bottom: 1px solid #282b22;
+            padding-right: 0px;
+        }
+        :last-child{
+            max-width: 371px;
+            margin-left: 33px;
+        }
+    }
+
+
+    
+}

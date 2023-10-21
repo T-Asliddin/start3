@@ -14,11 +14,13 @@
 
 .dizyn__list{
     @include flex;
+    row-gap: 60px;
 }
 
 .dizayn__item{
     max-width: 354px;
     border-left: 1px solid #D5D6D4;
+    
 }
 
 .dizyn__box{
@@ -62,5 +64,6 @@ line-height: 100%;
         flex-wrap: wrap;
     }
     .dizayn__item{
-        max-width: 300px;}
+        max-width: 300px;
+    border-left: none;}
     }

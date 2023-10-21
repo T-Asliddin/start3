@@ -1,6 +1,7 @@
 .safe{
     background-color:  #3D4A39;
     height: 788px;
+    margin-bottom: 140px
 }
 
 
@@ -30,7 +31,7 @@ opacity: 0.5;
 .safe__item{
 margin-right: auto;
 margin-left: auto;
-align-items: center;
+text-align: center;
 
     &::before{
         content: "";
